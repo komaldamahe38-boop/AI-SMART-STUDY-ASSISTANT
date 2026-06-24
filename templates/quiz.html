@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Generator</title>
+</head>
+<body>
+
+<h1>Quiz Generator</h1>
+
+<form method="POST">
+    <input type="text" name="topic" placeholder="Enter Topic">
+    <button type="submit">Generate Quiz</button>
+</form>
+
+{% for q in questions %}
+<p>{{ q }}</p>
+{% endfor %}
+
+<a href="/">Back</a>
+
+</body>
+</html>
